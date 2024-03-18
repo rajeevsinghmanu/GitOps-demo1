@@ -17,8 +17,7 @@ pipeline {
         }
         stage('Checkout SCM'){
             steps {
-                git credentialsId: 'github', 
-                url: 'https://github.com/rajeevsinghmanu/GitOps-demo1.git',
+                git credentialsId: 'github', url: 'https://github.com/rajeevsinghmanu/GitOps-demo1.git'
                 branch: 'master'
             }
         }
